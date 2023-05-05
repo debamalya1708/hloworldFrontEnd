@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <link rel="shortcut icon" href="film.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="js/home.js"></script>
+  <link rel="stylesheet" href="css/home.css">
+  <title>Hello World : World Best Place</title>
+</head>
+
+<body>
+  <div class="navBar">
+
+
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img src="film.png" alt="" width="30" height="28" id="navBarImg">Hello
+          World</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="sel">
+                <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Languages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="lang">
+                <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="ContactUs.html">Contact Us</a>
+          </li> -->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="favourite.html">Favourites</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+
+            <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+
+          </form>
+          <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#registerModal" type="submit"
+            id="upload">
+            <i class="fa fa-user"></i>Join Now</button>
+          <!-- <button class="btn btn-outline-success" style="display: none;" onclick="profile()" type="submit" id="profile">
+            <i class="fa fa-user"></i>My Profile</button> -->
+            <div class="profile_image" id="dp" >
+              <div class="col">
+                  <img  onclick="profile()" class="rounded-circle z-depth-3" id="profilePic" alt="100x100" style="height: 40px;width: 40px;"
+                    src="https://res.cloudinary.com/dq5jpef6l/image/upload/v1668422989/poem_u47bzi.jpg">
+                </div>
+                <div class="name"><div class="val" id="views_val" style="font-size: 22px;"></div></div>
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Join Now to Earn CashBack</h5> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 order-md-2" id="modalImage">
+              <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_gjmecwii.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
+            </div>
+            <div class="col-md-6 contents">
+              <div class="row justify-content-center">
+                <div class="col-md-8" id="register" style="display: none;">
+                  <div class="mb-4">
+                    <h3 style="color: gold;">Join Now at <strong style="color: gold;">
+                        <h2 style="font-weight: bold;">Hello World</h2>
+                      </strong></h3>
+                    <!-- <p class="mb-4">India's Biggest Shopping & Cashback Platform.</p> -->
+                  </div>
+                  <form id="registration">
+                    <div class="form-group first">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name">
+
+                    </div>
+                    <div class="form-group first">
+                      <label for="mobile">Mobile No.</label>
+                      <input type="number" class="form-control" id="contact">
+
+                    </div>
+                    <div class="form-group first">
+                      <label for="email">Email-Id</label>
+                      <input type="text" class="form-control" id="email">
+
+                    </div>
+                    <div class="form-group last mb-4">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password">
+
+
+                    </div>
+
+                    <button onclick="register()" class="btn text-white btn-block btn-primary">Join Now</button>
+
+                    <span class="d-block text-left my-4 text-muted"><a onclick="loginCall()"
+                        style="text-decoration: none;" class="register">Already have
+                        account?<b style="color: #E01E5A;"> Sign In</b></a></span>
+
+
+                  </form>
+                </div>
+
+
+
+
+                <div class="col-md-8" id="login" style="display: initial;">
+                  <div class="mb-4">
+                    <h3 style="color: gold;">Log In to <strong style="color: gold;">
+                        <h2 style="font-weight: bold;">Hello World</h2>
+                      </strong></h3>
+                    <!-- <p class="mb-4">India's Biggest Shopping & Cashback Platform.</p> -->
+                  </div>
+                  <form id="login">
+                    <!-- <div class="form-group first">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name">
+
+                    </div> -->
+                    <!-- <div class="form-group first">
+                      <label for="mobile">Mobile No.</label>
+                      <input type="number" class="form-control" id="contact">
+
+                    </div> -->
+                    <div class="form-group first">
+                      <label for="email">Contact No.</label>
+                      <input type="text" class="form-control" name="email" id="contactLogIn">
+
+                    </div>
+                    <div class="form-group last mb-4">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" name="password" id="passwordLogIn">
+
+
+                    </div>
+
+                    <button onclick="logIn()" class="btn text-white btn-block btn-primary">Log In</button>
+
+                    <span class="d-block text-left my-4 text-muted"><a style="text-decoration: none;"
+                        onclick="signUpCall()" class="register">Don't have
+                        account?<b style="color: #E01E5A;"> Sign Up</b></a></span>
+
+                  </form>
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-3">
+
+    <div class="pill_section mb-2">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gaming</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Music</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Travel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Comedy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FIFA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">IPL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kapil Sharma</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Arijit Singh</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bollywood</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Rabindra Sangeet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mt-2 mb-3">Recomended For You</div>
+
+    <div class="row row-cols-4" id="riju">
+
+    </div>
+
+  </div>
+
+  <div class="featured_category">
+    <h3 id="featured_category">Choose Your Category</h3>
+  </div>
+
+  <div class="category" id="category">
+
+  </div>
+
+  <div class="featured_category">
+    <h3 id="featured_category">Languages You May Like</h3>
+  </div>
+
+  <div class="language" id="language">
+
+  </div>
+
+
+  <!-- <script src="js/auth.js"></script> -->
+
+</body>
+
+</html>

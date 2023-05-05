@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="film.png"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/video.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/video.css">
+
+  <title>video</title>
+</head>
+
+<body>
+
+  <div class="navBar">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img src="film.png" alt="" width="30" height="28" id="navBarImg">Hello
+          World</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="sel">
+                <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Languages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="lang">
+                <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="ContactUs.html">Contact Us</a>
+      </li> -->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="favourite.html">Favourites</a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#registerModal" type="submit"
+            id="upload">
+            <i class="fa fa-user"></i>Sign In</button>
+          <button class="btn btn-outline-success" style="display: none;" onclick="profile()" type="submit" id="profile">
+            <i class="fa fa-user"></i>My Profile</button>
+          <form class="d-flex">
+
+            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Join Now to Earn CashBack</h5> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 order-md-2">
+              <img src="film.png" alt="Image" style="height: 90%; width: 90%;" class="img-fluid">
+            </div>
+            <div class="col-md-6 contents">
+              <div class="row justify-content-center">
+                <div class="col-md-8" id="register" style="display: none;">
+                  <div class="mb-4">
+                    <h3 style="color: gold;">Join Now at <strong style="color: gold;">
+                        <h2 style="font-weight: bold;">Hello World</h2>
+                      </strong></h3>
+                    <!-- <p class="mb-4">India's Biggest Shopping & Cashback Platform.</p> -->
+                  </div>
+                  <form>
+                    <div class="form-group first">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name">
+
+                    </div>
+                    <div class="form-group first">
+                      <label for="mobile">Mobile No.</label>
+                      <input type="number" class="form-control" id="contact">
+
+                    </div>
+                    <div class="form-group first">
+                      <label for="email">Email-Id</label>
+                      <input type="text" class="form-control" id="email">
+
+                    </div>
+                    <div class="form-group last mb-4">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password">
+
+
+                    </div>
+
+                    <input type="submit" value="Join Now" class="btn text-white btn-block btn-primary">
+
+                    <span class="d-block text-left my-4 text-muted"><a onclick="loginCall()" class="register">Already
+                        have
+                        account?<b style="color: #E01E5A;"> Sign In</b></a></span>
+
+                  </form>
+                </div>
+
+                <div class="col-md-8" id="login" style="display: initial;">
+                  <div class="mb-4">
+                    <h3 style="color: gold;">Log In to <strong style="color: gold;">
+                        <h2 style="font-weight: bold;">Hello World</h2>
+                      </strong></h3>
+                    <!-- <p class="mb-4">India's Biggest Shopping & Cashback Platform.</p> -->
+                  </div>
+                  <form>
+                    <!-- <div class="form-group first">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" id="name">
+    
+                        </div> -->
+                    <!-- <div class="form-group first">
+                          <label for="mobile">Mobile No.</label>
+                          <input type="number" class="form-control" id="contact">
+    
+                        </div> -->
+                    <div class="form-group first">
+                      <label for="email">Email-Id</label>
+                      <input type="text" class="form-control" id="email">
+
+                    </div>
+                    <div class="form-group last mb-4">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password">
+
+
+                    </div>
+
+                    <input type="submit" value="Join Now" class="btn text-white btn-block btn-primary">
+
+                    <span class="d-block text-left my-4 text-muted"><a onclick="signUpCall()" class="register">Don't
+                        have
+                        account?<b style="color: #E01E5A;"> Sign Up</b></a></span>
+
+                  </form>
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="row mt-2">
+    <div class="col-md-8">
+      <main>
+        <div class="mt-3 videoSection" id="videoSection">
+
+        </div>
+      </main>
+      <!-- <main>
+
+        <div class="mt-3" id="container">
+
+        </div>
+      </main> -->
+      <div class="textSection">
+        <div class="textarea">
+          <div class="title">
+            <h2 id="title"></h2>
+            <!-- <h6 id="uploder">Debamalya Palai</h6> -->
+          </div>
+          <div class="laterSection">
+            <!-- <button class="btn"> -->
+            <i class="fa fa-external-link" id="goToProfile" onclick="goToProfile()"></i>
+            <i class="fa fa-thumbs-up stroke-transparent" id="addLike" style="color: red;display:none;"
+              onclick="likeVideo()"></i>
+            <p id="noUser" style="font-size: 11px;display: none;">To Like the Video LogIn First!</p>
+            <i id="alreadyLike" class="fa fa-thumbs-up" style="display: none;color: red"></i>
+            <!-- </button> -->
+            <!-- <button class="btn1" id="add" > -->
+            <i class="fa fa-heart-o" id="add" style="color: red" onclick="watchLater()"></i>
+            <!-- </button> -->
+
+            <i class="fa fa-heart" id="remove" onclick="rem2oved()" style="display: none;color: red"></i>
+
+            <!-- <button class="btn2" id="share"> -->
+            <i class="fa fa-share" id="goToProfile"></i>
+            <!-- Share</button> -->
+
+          </div>
+
+
+        </div>
+        <div class="subscribe" style="display: flex;margin-left: 20px;">
+          <p id="subscribeNo"  style="font-size: 15px;margin-right: 20px;color: #E01E5A; margin-top: 0px; font-weight: 500;">1K+ Subscriber</p>
+          <ul class="badge rounded-pill bg-warning text-dark" style="float: right;">
+            <!-- <li class="nav-item"> -->
+              <a id="subscriber" class="nav-link active" onclick="subscribe()" aria-current="page" style="font-size: 14px;">Subscribe Now</a>
+              <a id="alreadySubscriber" class="nav-link active" onclick="subscribe()" style="display: none;font-size: 14px;" aria-current="page">Subscribed!</a>
+
+            <!-- </li> -->
+          </ul>
+        </div>
+        
+        <div class="info">
+
+          <div class="views_info_text">
+            <div class="views_text">Views</div>
+            <hr class="rounded">
+            <div class="val" id="views_val"></div>
+          </div>
+          <div class="date_info_text">
+            <div class="date_text">Uploaded on</div>
+            <hr class="rounded">
+            <div class="val" id="date_val"></div>
+          </div>
+          <div class="cat_info_text">
+            <div class="category_text">Category</div>
+            <hr class="rounded">
+            <div class="val" id="category_val"></div>
+          </div>
+          <div class="language_info_text">
+            <div class="language_text">Likes</div>
+            <hr class="rounded">
+            <div class="val" id="language_val"></div>
+          </div>
+        </div>
+        <div class="description">
+          <p id="desc"></p>
+        </div>
+        <!-- <hr class="mb-3" /> -->
+        <div class="title" style="
+        margin-bottom: 10px;">
+          <h4 id="title"><span id="counts"></span> Comments</h4>
+          <!-- <h6 id="uploder">Debamalya Palai</h6> -->
+        </div>
+        <div class="comment mb-3">
+          <div class="form" id="displayForm" style="display: none;">
+            <div class="mb-3" style="margin-left: 20px;">
+              <textarea class="form-control" id="comment" name="body" rows="2"
+                placeholder="Add your comment"></textarea>
+            </div>
+            <div class="col-12 mt-2" style="margin-left: 20px;">
+              <button onclick="addComments()" class="btn btn-primary" style="background-color: red;border-radius: 18px; color: white;">Add Comment</button>
+            </div>
+          </div>
+          <div class="display mt-3" id="displayComment">
+            <!-- <div class="userComment">
+              <span class="commentHeader">
+                <p id="commenterName">Debamalya Palai </p>
+                <p id="commentDate">12/11/2022</p>
+              </span>
+              <p id="commentBody">Shobhit was looking like professional vlogger 😂😂😂 telling all details and shooting
+                good shorts ❤❤</p>
+              <hr class="mb-2 mt-1" />
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 related">
+      <div class="views_text">Related section for you</div>
+      <hr class="rounded">
+
+      <div class="row" id="relatedSection">
+        <!-- <div class="card" id="relatedCard" style="width: 28rem;text-align:start">
+          <div class="imgCard" >
+            <img src="Language.png" class="card-img-top card_img" alt="...">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title" id="cartTitle">Title here</h6>
+            <p class="card-text" id="cardText">User name here</p>
+            <h6 id="views" class="card-title" id="cardTitle">2 views • 12/11/2022</h6>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

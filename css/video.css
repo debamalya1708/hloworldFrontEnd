@@ -1,0 +1,259 @@
+body {
+  background-color: white;
+  /* padding: 5px; */
+}
+
+#navBarImg {
+  margin-right: 15px;
+
+}
+
+.row {
+  margin-right: 0px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0;
+}
+
+
+.container {
+  height: 540px;
+  width: 980px;
+  /* box-shadow: 5px 5px 5px rgb(0, 0, 0); */
+  /* margin: 10px; */
+  border-radius: 14px;
+}
+
+video {
+  outline: none;
+  background: #000;
+  /* width: 100%; */
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.player {
+  height: 540px;
+  width: 100%;
+}
+
+.views_info_text {
+  margin-left: 2%;
+  margin-right: 10%;
+  font-size: 18px;
+}
+
+.date_info_text {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18px;
+}
+
+.cat_info_text {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18px;
+}
+
+.language_info_text {
+  margin-left: 10%;
+  margin-right: 2%;
+  font-size: 18px;
+}
+
+.val {
+  text-align: center;
+  margin-top: 5px;
+}
+
+hr.rounded {
+  border-top: 2px solid #bbb;
+  margin-top: 5px;
+}
+
+#title {
+  margin-top: 8px;
+  margin-left: 20px;
+  font-size: 25px;
+  /* text-align: center; */
+  margin-bottom: 0px;
+  color: black;
+}
+
+#uploder {
+  font-size: 22px;
+  margin-left: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+p {
+  /* margin-left: 50px; */
+  /* margin-right: 50px; */
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+#goToProfile, #add, #remove, #addLike, #alreadyLike {
+  margin-left: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  color: red;
+}
+
+#goToProfile:hover,#add:hover, #remove:hover,#addLike:hover, #alreadyLike:hover {
+  background-color: #000;
+  border-radius: 50px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.info {
+  display: flex;
+  color: black;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.description {
+  padding: 20px;
+}
+
+.btn1 {
+  color: black;
+  background-color: transparent;
+  /* background-color: gold; */
+  height: 50px;
+  width: 200px;
+  border-width: 0px;
+  /* margin-right: 30px; */
+  margin-left: 5px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.btn2 {
+  color: black;
+  background-color: transparent;
+  height: 50px;
+  width: 140px;
+  border-width: 0px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.btn1:hover {
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgb(224, 224, 224);
+  border-radius: 8px;
+  transition: all 0.5 ease;
+}
+
+.btn2:hover {
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgb(224, 224, 224);
+  border-radius: 8px;
+  transition: all 0.5 ease;
+}
+
+.textarea {
+  display: flex;
+  /* text-align: center;
+    justify-content: center; */
+}
+
+.laterSection {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  /* display: flex;
+    justify-content: center; */
+}
+
+
+.card_img {
+  height: 120px;
+  border-radius: 14px;
+  width: 200px;
+}
+
+#relatedCard {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#cartTitle {
+  font-size: 14px;
+  text-align: start;
+}
+
+#cardText {
+  font-size: 14px;
+  text-align: start;
+  align-items: flex-start;
+  margin-top: 2px;
+}
+
+#commenterName{
+  color: #000;
+  margin-top: 0px;
+    /* margin-left: 20px; */
+    font-family: sans-serif;
+    /* color: white; */
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 3px;
+}
+#commentDate{
+  color: #000;
+  margin-top: 0px;
+    /* margin-left: 20px; */
+    font-family: sans-serif;
+    font-size: 12px;
+    color: rgb(104, 104, 104);
+    /* text-align: left; */
+}
+#commentBody{
+  color: #000;
+  margin-top: 0px;
+    /* margin-left: 20px; */
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    flex-direction: row;
+    font-weight: bold;
+}
+.commentHeader{
+  display: flex;
+}
+.userComment{
+  margin-left: 20px;
+}
+
+.fa-thumbs-up {
+  color: white;
+  font-size: 2em;
+}
+
+.stroke-transparent {
+ -webkit-text-stroke: 1px gold;
+ -webkit-text-fill-color: transparent;
+}

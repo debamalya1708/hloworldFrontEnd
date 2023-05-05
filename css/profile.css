@@ -1,0 +1,134 @@
+.views_info_text{
+    margin-left: 2%;
+    margin-right: 10%;
+    font-size: 18px;
+  }
+  .date_info_text{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+  }
+  .cat_info_text{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+  }
+  .language_info_text{
+    margin-left: 10%;
+    margin-right: 2%;
+    font-size: 18px;
+  }
+  .val{
+    text-align: center;
+    margin-top: 5px;
+  }
+  hr.rounded {
+    border-top: 2px solid #bbb;
+    margin-top: 5px;
+  }
+  .info{
+    display:flex;
+    color: black;
+justify-content: center;
+margin-top: 40px;
+}
+
+#nav-tab {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 50px;
+  }
+  
+  #nav-boys-tab {
+    tab-size: 500;
+  }
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    background-color: gold;
+    color: black;
+    transition: 0.2s all ease-in;
+    border-radius: 50px;
+  }
+  
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    border-radius: 50px;
+    color: #757575;
+    font-size: 17px;
+  }
+  
+  .nav-tabs .nav-link:disabled{
+    display: none;
+    cursor: not-allowed;
+  }
+
+  .fa {
+    color:gold;
+    margin-right: 5px;
+      }
+      .fa-plus{
+        color:grey;
+    margin-right: 5px;
+      }
+
+      .card-img-top {
+        height: 90px;
+        width: 150px;
+        border-radius: 14px;
+    }
+
+    #table {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      /* background-color: rgb(235, 235, 235); */
+      text-align: center;
+    }
+    
+    #table td, #table th {
+      /* border: 1px solid #ddd; */
+      padding: 8px;
+      text-align: center;
+    }
+    
+    #table tr:nth-child(even){background-color: #fff;}
+    
+    /* #table tr:hover {background-color: rgb(156, 202, 245);} */
+    
+    #table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background-color: rgb(235, 235, 235);
+      color: black;
+      margin-bottom: 5px;
+      border-radius: 24px;
+    }
+  
+    tbody, td, tfoot, th, thead, tr {
+      border-color: inherit;
+      border-style: solid;
+      border-width: 0;
+      text-align: -webkit-center;
+  }
+  
+  /* .fa{
+      color: #ff4d59;
+  } */
+  #view{
+    border: none;
+    margin-top: 150%;
+    background-color: transparent;
+}
+#update{
+    border: none;
+    margin-top: 150%;
+    background-color: transparent;
+}
+#remove{
+    border: none;
+    margin-top: 150%;
+    background-color: transparent;
+}
